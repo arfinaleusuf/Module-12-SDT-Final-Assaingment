@@ -27,3 +27,9 @@ class Admin:
         self.username = username
         self.password = password
     
+    def login(self, username, password):
+        if self.username == username and self.password == password:
+            return True
+        else:
+            return False
+        
